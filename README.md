@@ -15,7 +15,7 @@ A comprehensive tutorial for learning the Claude Code SDK with hands-on Jupyter 
    ```
 
 3. **Open the tutorial notebook:**
-   `claude_code_sdk_complete_tutorial.ipynb`
+   `claude_code_sdk.ipynb`
 
 ## What's Included
 
@@ -33,7 +33,7 @@ A comprehensive tutorial for learning the Claude Code SDK with hands-on Jupyter 
 
 ## Tutorial Topics
 
-1. **Basic Setup & Authentication** - Get started with the SDK
+1. **Basic Setup & Verification** - Get started with the SDK
 2. **Simple Queries** - Make your first Claude Code requests
 3. **Custom System Prompts** - Tailor Claude's behavior
 4. **Multi-turn Conversations** - Build interactive dialogues
@@ -49,7 +49,7 @@ A comprehensive tutorial for learning the Claude Code SDK with hands-on Jupyter 
 
 - Python 3.10+
 - UV package manager (auto-installed by setup script)
-- Optional: `ANTHROPIC_API_KEY` environment variable
+- Claude Code CLI (auto-installed by setup script)
 
 ## Manual Setup
 
@@ -66,30 +66,19 @@ uv sync
 uv run jupyter lab
 ```
 
-## API Key Setup
+## How It Works
 
-For full functionality, set your Anthropic API key:
-
-```bash
-export ANTHROPIC_API_KEY='your-api-key-here'
-```
-
-Or create a `.env` file:
-```
-ANTHROPIC_API_KEY=your-api-key-here
-```
-
-> **Note:** The tutorial works in Claude Code environments without explicit API key setup.
+The Claude Code SDK works seamlessly with your existing Claude Code subscription - no additional API key setup required! The SDK automatically uses your Claude Code authentication.
 
 ## Project Structure
 
 ```
 .
-├── claude_code_sdk_complete_tutorial.ipynb  # Main tutorial notebook
-├── pyproject.toml                            # UV project configuration
-├── uv.lock                                   # Dependency lock file
-├── setup.sh                                  # One-command environment setup
-└── README.md                                 # This file
+├── claude_code_sdk.ipynb  # Main tutorial notebook
+├── pyproject.toml         # UV project configuration
+├── uv.lock               # Dependency lock file
+├── setup_env.sh          # One-command environment setup
+└── README.md             # This file
 ```
 
 ## Features
