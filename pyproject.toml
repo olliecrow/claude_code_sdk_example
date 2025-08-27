@@ -1,0 +1,32 @@
+[project]
+name = "claude-code-sdk-tutorial"
+version = "1.0.0"
+description = "Complete tutorial for Claude Code SDK with Jupyter notebook examples"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # Core Claude Code SDK
+    "claude-code-sdk>=0.0.20",
+    "anyio>=4.0.0",
+    
+    # Jupyter for running the tutorial notebook
+    "jupyter>=1.0.0",
+    "jupyterlab>=4.0.0",
+    "ipywidgets>=8.0.0",
+    
+    # Basic data science libraries for examples
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    
+    # Development and utility
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "pytest>=7.4.0",
+    "mypy>=1.5.0",
+]
