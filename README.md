@@ -69,3 +69,4 @@ Recommended first run order in the notebook:
 - `README.md`: human-facing project guide
 - `claude_code_sdk.ipynb`: tutorial content and executable examples
 - `CLAUDE.md`: project operating rules for local agent workflows
+- `docs/project-preferences.md`: durable project maintenance preferences
