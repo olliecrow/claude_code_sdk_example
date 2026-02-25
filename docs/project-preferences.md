@@ -27,5 +27,5 @@ These preferences define how `claude_code_sdk_example` should be maintained as a
 
 ## Collaboration Preferences
 
-- Keep commit attribution to `olliecrow <me@olliecrow.io>`.
+- Preserve accurate author/committer attribution for each contributor.
 - Avoid destructive history rewrites unless required for secret/confidentiality remediation.
