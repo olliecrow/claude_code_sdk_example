@@ -2,71 +2,68 @@
 
 Hands-on tutorial project for learning the Claude Code SDK in Jupyter notebooks.
 
-## Project Aim
+## What this project is trying to achieve
 
-Provide a runnable, end-to-end learning path for the Claude Code SDK with practical examples that can be executed locally.
+Give you a clean and runnable path from zero setup to practical SDK usage.
 
-## What This Repository Does
+## What you experience as a user
 
-- provides a tutorial notebook (`claude_code_sdk.ipynb`) with progressive SDK examples
-- includes one-command environment setup (`setup_env.sh`)
-- uses `uv` for reproducible Python dependency management
+1. You run one setup script.
+2. You open the notebook.
+3. You move through examples from basic calls to structured workflows.
+4. You use diagnostics cells if your environment needs debugging.
 
-## Requirements
+## Quick start
 
-- Python `3.10+`
-- `uv` package manager
-- Claude Code CLI/SDK access in your local environment
-
-## Authentication
-
-The examples are designed to use your existing local Claude Code authentication/session. If your environment requires API-key auth, configure it before running notebook examples.
-
-## Quick Start
-
-1. Set up the environment:
+1. Set up the environment.
 
 ```bash
 ./setup_env.sh
 ```
 
-2. Launch Jupyter Lab:
+2. Launch Jupyter Lab.
 
 ```bash
 uv run jupyter lab
 ```
 
-3. Open and run:
+3. Open and run `claude_code_sdk.ipynb`.
 
-- `claude_code_sdk.ipynb`
+## Recommended notebook order
 
-## Getting Started
+1. Setup and environment checks.
+2. Simple query examples.
+3. Multi-turn and tool integration examples.
+4. Structured output and error handling examples.
+5. Diagnostics cells.
 
-Recommended first run order in the notebook:
+## Requirements
 
-1. setup and environment validation
-2. simple query examples
-3. multi-turn and tool integration examples
-4. structured output and error handling examples
-5. diagnostics cells
+- Python `3.10+`
+- `uv`
+- Claude Code CLI and SDK access in your local environment
 
-## Local State and Directory Layout
+## Authentication
+
+The examples use your existing local Claude Code session.
+If your environment needs API keys, configure that before running notebook cells.
+
+## Helpful tips
+
+- Re-run `./setup_env.sh` if dependencies or SDK bindings drift.
+- Run `uv sync` manually when you need to refresh dependencies.
+
+## Directory layout
 
 - `claude_code_sdk.ipynb`: tutorial notebook
-- `setup_env.sh`: environment bootstrap and verification script
-- `pyproject.toml` + `uv.lock`: dependency and lock metadata
-- `.venv/`: local environment directory created by `uv` (local-only)
-- `CLAUDE.md`: project-specific local agent instructions
+- `setup_env.sh`: setup and environment verification script
+- `pyproject.toml` and `uv.lock`: dependency metadata
+- `.venv/`: local environment created by `uv`
+- `CLAUDE.md`: project specific local agent instructions
 
-## Logging and Debugging
-
-- rerun `./setup_env.sh` if dependencies or SDK bindings drift
-- use notebook diagnostics cells to verify SDK import and runtime configuration
-- run `uv sync` manually if dependency resolution changes are needed
-
-## Documentation Map
+## Documentation map
 
 - `README.md`: human-facing project guide
 - `claude_code_sdk.ipynb`: tutorial content and executable examples
-- `CLAUDE.md`: project operating rules for local agent workflows
+- `CLAUDE.md`: local operating rules for agent workflows
 - `docs/project-preferences.md`: durable project maintenance preferences
