@@ -101,4 +101,5 @@ dry-run only: no setup or notebook commands were executed.
 - `README.md`: human-facing project guide
 - `claude_code_sdk.ipynb`: tutorial content and executable examples
 - `CLAUDE.md`: local operating rules for agent workflows
+- `docs/README.md`: docs index and routing
 - `docs/project-preferences.md`: durable project maintenance preferences
