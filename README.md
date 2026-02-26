@@ -29,6 +29,18 @@ uv run jupyter lab
 
 3. Open and run `claude_code_sdk.ipynb`.
 
+Run a quick environment check.
+
+```bash
+./doctor.sh
+```
+
+Preview setup and execution order.
+
+```bash
+./dry_run.sh
+```
+
 ## Recommended notebook order
 
 1. Setup and environment checks.
@@ -52,6 +64,29 @@ If your environment needs API keys, configure that before running notebook cells
 
 - Re-run `./setup_env.sh` if dependencies or SDK bindings drift.
 - Run `uv sync` manually when you need to refresh dependencies.
+
+## Example output
+
+Doctor summary.
+
+```text
+claude_code_sdk_example doctor
+[ok] tool uv: /usr/local/bin/uv
+[ok] sdk import: claude_code_sdk import works
+doctor result: PASS
+```
+
+Dry-run summary.
+
+```text
+claude_code_sdk_example dry-run
+planned sequence:
+1. Run ./doctor.sh.
+2. Run ./setup_env.sh.
+3. Start Jupyter.
+4. Open claude_code_sdk.ipynb.
+dry-run only: no setup or notebook commands were executed.
+```
 
 ## Directory layout
 
