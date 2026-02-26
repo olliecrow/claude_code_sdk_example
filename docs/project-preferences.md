@@ -23,6 +23,7 @@ These preferences define how `claude_code_sdk_example` should be maintained as a
 ## Verification Expectations
 
 - Re-run setup and key tutorial sections after meaningful changes.
+- Run `./doctor.sh` and `./dry_run.sh` when setup or workflow scripts change.
 - Keep notebook outputs sanitized when preparing public releases.
 
 ## Collaboration Preferences
